@@ -19,5 +19,5 @@ _start:
 
 section .data
     
-    message: db "Hello World!"
+    message: db "Hello World!",0xA
     len: equ $-message
