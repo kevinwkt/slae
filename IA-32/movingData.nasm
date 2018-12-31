@@ -27,6 +27,12 @@ _start:
     mov bx, [sample]
     mov ecx, [sample]
 
+    ; move from register to memory
+    mov eax, 0x33445566
+    mov byte [sample], al
+    mov word [sample], ax
+    mov dword [sample], eax 
+
     ; move immediate value into memory
     mov dword [sample], 0x33445566
     
